@@ -1,0 +1,37 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.nav_left {
+  display: flex;
+  align-items: center;
+}
+.nav_logo_img {
+  width: 40px;
+  margin-right: 10px;
+}
+.nav_links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+.nav_actions {
+  display: flex;
+  gap: 15px;
+}
+.nav_actions .btn_apply,
+.nav_actions .btn_signin {
+  border: none;
+  cursor: pointer;
+}
+.btn_apply {
+  background-color: #8B1A32;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
