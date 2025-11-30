@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../assets/Image/logo_head.png";
+import {Link} from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -7,7 +8,7 @@ const Navbar = () => {
     <nav className="nav">
       {/* Left Section: Logo */}
       <div className="nav_left">
-        <img src={Logo} alt="EduGlobe Logo" className="nav_logo_img" />
+        <Link to="/"><img src={Logo} alt="EduGlobe Logo" className="nav_logo_img" /></Link>
         <div className="nav_logo_text">
           EduGlobe
           <p>Language Centre</p>
@@ -16,10 +17,10 @@ const Navbar = () => {
 
       {/* Center Section: Links */}
       <ul className="nav_links">
-        <li>Home</li>
-        <li>Courses</li>
-        <li>Apply Now</li>
-        <li>Contact</li>
+        <Link to="/">Home</Link>
+        <Link to="/courses">Courses</Link>
+        <Link to="/apply_now">Apply Now</Link>
+        <Link to="/contact">Contact</Link>
       </ul>
 
       {/* Right Section: Buttons */}
