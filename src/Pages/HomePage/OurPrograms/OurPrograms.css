@@ -1,0 +1,217 @@
+.our-programs {
+  padding: 60px 80px;
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Header */
+.our-programs__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.our-programs__subtitle {
+  font-weight: 600;
+  color: #fb923c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.our-programs__title {
+  font-size: 2.5rem;
+  color: #8b1a32;
+  margin: 10px 0;
+}
+.our-programs__description {
+  font-size: 1rem;
+  color: #6b7280;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* Grid */
+.our-programs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Program Card*/
+.program-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+.program-card__image {
+  width: 100%;
+  height: 200px;
+}
+
+/* Info */
+.program-card__info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Level & Rating */
+.program-card__rating {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.program-card__level {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 0.85rem;
+}
+/* Level Colors */
+.level-beginner {
+  background-color: #15803d;
+}
+.level-intermediate {
+  background-color: #3b82f6;
+  color: #1d4ed8;
+}
+.level-advanced {
+  background-color: #f59e0b;
+  color: #c2410c;
+}
+.level-all-levels {
+  background-color: #8b5cf6;
+  color: #7e22ce;
+}
+.level-customized {
+  background-color: #ef4444;
+}
+
+.program-card__score {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #fbbf24;
+}
+.program-card__star {
+  font-size: 14px;
+}
+
+/* Title & Description */
+.program-card__title {
+  font-size: 1.25rem;
+  max-width: 255px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #8b1a32;
+}
+.program-card__description {
+  font-size: 16px;
+  color: #4b5563;
+  flex: 1;
+  margin-bottom: 10px;
+}
+.program-card__meta {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+.duration_1 {
+  color: #8b1a32;
+  font-size: 20px;
+}
+.program-card__duration,
+.program-card__students {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Footer */
+.program-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.program-card__price-value {
+  font-weight: bold;
+  color: #8b1a32;
+  font-size: 1.1rem;
+}
+.program-card__price-type {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-right: 200px;
+}
+.program-card__button {
+  padding: 8px 15px;
+  background-color: #8b1a32;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.program-card__button:hover {
+  background-color: #6e0d25;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .our-programs__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .our-programs__title {
+    font-size: 2.2rem;
+  }
+  .program-card__image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-programs__grid {
+    grid-template-columns: 1fr;
+  }
+  .our-programs__title {
+    font-size: 2rem;
+  }
+  .program-card__image {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-programs {
+    padding: 50px 40px;
+  }
+  .our-programs__title {
+    font-size: 1.7rem;
+  }
+  .program-card__image {
+    height: 140px;
+  }
+  .program-card__footer {
+    align-items: center;
+  }
+  .program-card__price-type {
+    margin-right: 10px;
+  }
+  .program-card__button {
+    width: 100%;
+  }
+}
