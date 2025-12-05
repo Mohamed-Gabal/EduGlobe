@@ -1,0 +1,223 @@
+.get-touch {
+  padding: 60px 80px;
+  background-color: #f8f9fc;
+}
+.get-touch__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+/* Left & Right */
+.get-touch__left,
+.get-touch__right {
+  flex: 1;
+  min-width: 300px;
+}
+/* Left Side */
+.get-touch__subtitle {
+  font-size: 15px;
+  color: #fb923c;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.get-touch__title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #8b1a32;
+}
+.get-touch__description {
+  font-size: 15px;
+  max-width: 380px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+/* Contact Info */
+.get-touch__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.get-touch__info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #6b7280;
+}
+.get-touch__icon {
+  color: #8b1a32;
+  font-size: 20px;
+}
+/* Social Media */
+.get-touch__social .social__text {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+.social__list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ddd;
+  color: #8b1a32;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  font-size: 16px;
+}
+.social__link:hover {
+  background-color: #6E0D25;
+  color: #FFF;
+}
+/* Right Side - Form */
+.get-touch__right {
+  background-color: #FFF7ED;
+  padding: 30px;
+  border-radius: 20px;
+}
+.get-touch__form-title {
+  color: #8B1A32;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.get-touch__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.get-touch__form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #000000;
+}
+.get-touch__form input,
+.get-touch__form textarea,
+.get-touch__form select {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  transition: 0.3s ease;
+}
+.get-touch__form input:focus,
+.get-touch__form textarea:focus,
+.get-touch__form select:focus {
+  border-color: #8B1A32;
+}
+.get-touch__form select {
+  appearance: none;
+  cursor: pointer;
+}
+.get-touch__form button.btn-primary {
+  padding: 12px 20px;
+  background-color: #8B1A32;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.get-touch__form button.btn-primary:hover {
+  background-color: #6E0D25;
+}
+/* Medium screens */
+@media (max-width: 992px) {
+  .get-touch__container {
+    gap: 30px;
+  }
+}
+/* Small screens - tablet/mobiles */
+@media (max-width: 768px) {
+  .get-touch__container {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .get-touch__info {
+    align-items: center;
+ }
+  .get-touch__left,
+  .get-touch__right {
+    flex: 1 1 100%; 
+    min-width: 100%;
+  }
+  .get-touch__left {
+    text-align: center;
+  }
+  .get-touch__description {
+    max-width: 100%; 
+    margin: 0 auto 30px auto;
+  }
+  .get-touch__right {
+    padding: 25px 20px;
+  }
+  .get-touch__form input,
+  .get-touch__form textarea,
+  .get-touch__form select {
+    width: 100%; 
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  .get-touch__form button.btn-primary {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 0;
+  }
+  .social__list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .social__link {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+/* Extra small screens - mobile */
+@media (max-width: 480px) {
+  .get-touch {
+    padding: 40px 15px;
+  }
+  .get-touch__title {
+    font-size: 24px;
+  }
+  .get-touch__form-title {
+    font-size: 20px;
+  }
+  .get-touch__form input,
+  .get-touch__form textarea,
+  .get-touch__form select {
+    font-size: 13px;
+    padding: 10px;
+  }
+  .get-touch__form button.btn-primary {
+    font-size: 13px;
+    padding: 10px;
+  }
+  .social__link {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+}
+
