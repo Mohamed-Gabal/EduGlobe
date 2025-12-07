@@ -1,0 +1,102 @@
+.comprehensive {
+  margin: 0 auto;
+  padding: 60px 80px;
+  text-align: center;
+}
+.comprehensive__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #8b1a32;
+  background-color: #6e0d251a;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.comprehensive__header {
+  font-size: 36px;
+  font-weight: 800;
+  color: #8b1a32;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.comprehensive__description {
+  font-size: 16px;
+  color: #4B5563;
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+/* Grid for cards */
+.comprehensive__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+/* Individual cards */
+.comprehensive__grid_card {
+  background-color: #f5e6d380;
+  border-radius: 20px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.comprehensive__grid_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.comprehensive__grid_card img {
+  background-color: #8B1A32;
+  color: #FFF;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.comprehensive__grid_card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.comprehensive__grid_card p {
+  font-size: 14px;
+  color: #4B5563;
+  line-height: 1.5;
+}
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .comprehensive__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .comprehensive__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .comprehensive__header {
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .comprehensive__grid {
+    grid-template-columns: 1fr;
+  }
+  .comprehensive__header {
+    font-size: 24px;
+  }
+  .comprehensive__description {
+    font-size: 14px;
+  }
+  .comprehensive__grid_card h2 {
+    font-size: 16px;
+  }
+  .comprehensive__grid_card p {
+    font-size: 13px;
+  }
+}
