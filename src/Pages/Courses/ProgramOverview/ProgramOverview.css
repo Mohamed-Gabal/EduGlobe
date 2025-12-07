@@ -1,0 +1,132 @@
+
+.program_overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 60px 80px;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5E6D34D;
+}
+.program_overview_image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.program_overview_image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+}
+.program_overview_content {
+  flex: 1;
+  min-width: 300px;
+}
+.program_overview_subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fb923c; 
+  margin-bottom: 10px;
+}
+.program_overview_title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #8b1a32; 
+}
+.program_overview_desc {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+.program_overview_features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.program__feature_item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  flex: 1 1 250px;
+}
+.program__feature_icon {
+  font-size: 32px;
+  color: #8b1a32;
+  flex-shrink: 0;
+}
+.program__feature_text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.program__feature_title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+.program__feature_desc {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+/* RESPONSIVE STYLES */
+@media (max-width: 992px) {
+  .program_overview {
+    gap: 30px;
+    padding: 50px 30px;
+  }
+  .program_overview_features {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .program_overview {
+    flex-direction: column-reverse;
+  }
+  .program_overview_image {
+    width: 100%;
+    max-width: 100%;
+  }
+  .program_overview_content {
+    width: 100%;
+  }
+  .program_overview_title {
+    font-size: 28px;
+  }
+  .program_overview_desc {
+    font-size: 15px;
+  }
+  .program__feature_item {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .program_overview_title {
+    font-size: 24px;
+  }
+  .program_overview_subtitle {
+    font-size: 14px;
+  }
+  .program_overview_desc {
+    font-size: 14px;
+  }
+  .program__feature_title {
+    font-size: 16px;
+  }
+  .program__feature_desc {
+    font-size: 13px;
+  }
+  .program__feature_item {
+    flex-direction: row;
+    gap: 8px;
+  }
+}
