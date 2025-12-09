@@ -1,0 +1,175 @@
+.learning {
+  margin: 0 auto;
+  padding: 60px 80px;
+}
+/* Heading */
+.learning__heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.learning__subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fb923c;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.learning__title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 15px;
+}
+.learning__description {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+/* Cards */
+.learning__card {
+  background-color: #fff7ed;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+  cursor: default;
+}
+.learning__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.learning__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.learning__counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8b1a32;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  min-width: 50px;
+  min-height: 50px;
+  text-align: center;
+}
+.learning__text {
+  flex: 1;
+}
+.learning__cardTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+}
+.learning__cardDesc {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+.learning__icon {
+  width: 45px;
+  height: 70px;
+  object-fit: contain;
+  background-color: #6e0d251a;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* RESPONSIVE */
+
+/* Laptops and below */
+@media (max-width: 1200px) {
+  .learning {
+    padding: 50px 40px;
+  }
+}
+/* Tablets */
+@media (max-width: 992px) {
+  .learning {
+    padding: 40px 30px;
+  }
+  .learning__title {
+    font-size: 28px;
+  }
+  .learning__description {
+    font-size: 15px;
+  }
+  .learning__card {
+    padding: 20px;
+  }
+  .learning__counter {
+    font-size: 16px;
+    min-width: 45px;
+    min-height: 45px;
+    padding: 8px 12px;
+  }
+  .learning__cardTitle {
+    font-size: 18px;
+  }
+  .learning__cardDesc {
+    font-size: 14px;
+  }
+  .learning__icon {
+    width: 40px;
+    height: 60px;
+  }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .learning {
+    padding: 30px 20px;
+  }
+  .learning__title {
+    font-size: 24px;
+  }
+  .learning__description {
+    font-size: 14px;
+  }
+  .learning__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .learning__icon {
+    width: 35px;
+    height: 50px;
+  }
+}
+/* Small Mobile */
+@media (max-width: 480px) {
+  .learning {
+    padding: 20px 15px;
+  }
+  .learning__title {
+    font-size: 20px;
+  }
+  .learning__subtitle {
+    font-size: 13px;
+  }
+  .learning__description {
+    font-size: 13px;
+  }
+  .learning__counter {
+    font-size: 14px;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 6px 10px;
+  }
+  .learning__cardTitle {
+    font-size: 16px;
+  }
+  .learning__cardDesc {
+    font-size: 13px;
+  }
+  .learning__icon {
+    width: 30px;
+    height: 45px;
+  }
+}

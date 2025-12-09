@@ -24,7 +24,7 @@
 }
 .comprehensive__description {
   font-size: 16px;
-  color: #4B5563;
+  color: #4b5563;
   max-width: 650px;
   margin: 0 auto 40px;
 }
@@ -48,8 +48,8 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 .comprehensive__grid_card img {
-  background-color: #8B1A32;
-  color: #FFF;
+  background-color: #8b1a32;
+  color: #fff;
   padding: 15px;
   width: 60px;
   height: 60px;
@@ -65,7 +65,7 @@
 }
 .comprehensive__grid_card p {
   font-size: 14px;
-  color: #4B5563;
+  color: #4b5563;
   line-height: 1.5;
 }
 /* ===== Responsive ===== */
@@ -75,6 +75,9 @@
   }
 }
 @media (max-width: 768px) {
+  .comprehensive {
+    padding: 60px 20px;
+  }
   .comprehensive__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
