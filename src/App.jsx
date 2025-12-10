@@ -3,6 +3,7 @@ import MainLayout from "./Layout/MainLayout";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage/HomePage";
 import Courses from "./Pages/Courses/Courses";
+import ApplyNow from "./Pages/ApplyNow/ApplyNow";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />}/>
         <Route path="/courses" element={<Courses />}/>
+        <Route path="/apply_now" element={<ApplyNow />} />
       </Routes>
     </MainLayout>
   )

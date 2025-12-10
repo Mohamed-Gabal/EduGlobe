@@ -1,0 +1,94 @@
+.application {
+  padding: 60px 80px;
+  text-align: center;
+}
+.application__title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #000;
+}
+.application__description {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 50px;
+}
+/* Steps Container */
+.application__steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+/* Card */
+.application__step_card {
+  background: #fff7ed;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+.application__step_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.1);
+}
+/* Step number */
+.application__step_number {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fb923c;
+  background: #fff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 15px;
+  border: 2px solid #fb923c;
+}
+/* Icon */
+.application__step_icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+/* Step Title */
+.application__step_title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+/* Description */
+.application__step_desc {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+/* Responsive */
+@media (max-width: 992px) {
+  .application {
+    padding: 60px 40px;
+  }
+  .application__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .application {
+    padding: 50px 25px;
+  }
+  .application__title {
+    font-size: 28px;
+  }
+  .application__description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .application {
+    padding: 40px 20px;
+  }
+  .application__title {
+    font-size: 24px;
+  }
+  .application__step_card {
+    padding: 20px;
+  }
+}
