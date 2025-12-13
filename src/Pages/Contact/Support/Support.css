@@ -1,0 +1,114 @@
+
+.support {
+  margin: 0 auto;
+  padding: 60px 80px;
+}
+.support__content {
+  background-color: #6E0D25;
+  border-radius: 24px;
+  padding: 50px 60px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+/*  Typography */
+.support__title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #FFF;
+  margin-bottom: 12px;
+}
+.support__description {
+  font-size: 16px;
+  color: #FBE8E3;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+/*  Buttons Wrapper */
+.support__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+/*  Base Button Style */
+.support__buttons button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 180px;
+}
+/* Icons */
+.support__buttons img {
+  width: 20px;
+  height: 20px;
+}
+.support__buttons_call,
+.support__buttons_whats {
+  background-color: #FFF;
+  color: #6E0D25;
+  border: 1px solid #6E0D25;
+}
+.support__buttons_call:hover {
+  background-color: #6e0d25;
+  color: #FFF;
+  transform: translateY(-2px);
+}
+/* WhatsApp Button */
+.support__buttons_whats:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.25);
+}
+/* Tablet Responsive */
+@media (max-width: 992px) {
+  .support {
+    padding: 60px 40px;
+  }
+  .support__content {
+    padding: 40px;
+  }
+  .support__title {
+    font-size: 28px;
+  }
+}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .support {
+    padding: 60px 20px;
+  }
+  .support__content {
+    padding: 35px 25px;
+  }
+  .support__title {
+    font-size: 24px;
+  }
+  .support__description {
+    font-size: 14px;
+  }
+
+  .support__buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .support__buttons button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+/* Small Mobile */
+@media (max-width: 480px) {
+  .support__title {
+    font-size: 22px;
+  }
+  .support__buttons button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}

@@ -1,0 +1,138 @@
+
+.contact {
+  padding: 60px 80px;
+  background-color: #fff7ed;
+}
+/* Container */
+.contact__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+/* Text Content */
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Title */
+.contact__title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
+}
+.contact__title span {
+  display: block;
+}
+.contact__title strong {
+  display: block;
+  margin-top: 10px;
+}
+.span {
+  color: #8b1a32;
+}
+/* Description */
+.contact__description {
+  max-width: 480px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4B5563;
+}
+/* Button */
+.contact__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #5A0A1E;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact__button img {
+  width: 18px;
+  height: 18px;
+}
+
+.contact__button:hover {
+  background-color: #6e0d25;
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   Image
+================================ */
+.contact__image {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ===============================
+   Responsive
+================================ */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .contact__content {
+    align-items: center;
+  }
+
+  .contact__description {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .contact__title {
+    font-size: 32px;
+  }
+
+  .contact__title strong {
+    font-size: 18px;
+  }
+
+  .contact__description {
+    font-size: 15px;
+  }
+
+  .contact__button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .contact__title {
+    font-size: 26px;
+  }
+
+  .contact__description {
+    font-size: 14px;
+  }
+}

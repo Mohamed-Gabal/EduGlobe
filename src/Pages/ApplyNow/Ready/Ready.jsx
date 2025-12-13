@@ -9,11 +9,11 @@ import readyIcon7 from "../../../assets/Icons/readyIcon7.svg";
 import readyIcon8 from "../../../assets/Icons/readyIcon8.svg";
 
 import "./Ready.css";
+import { Link } from "react-router-dom";
 
 const Ready = () => {
   return (
     <section className="ready">
-
       {/* ---------- TOP SECTION ---------- */}
       <div className="ready__top">
         <h2 className="ready__title">Ready to Begin Your English Journey?</h2>
@@ -25,23 +25,25 @@ const Ready = () => {
 
         {/* Steps */}
         <div className="ready__steps">
-          {ReadyData.map(({ id, icon, title, description, url_icon, sub_title }) => (
-            <article key={id} className="ready__step">
-              <img src={icon} alt={title} className="ready__step_icon" />
+          {ReadyData.map(
+            ({ id, icon, title, description, url_icon, sub_title }) => (
+              <article key={id} className="ready__step">
+                <img src={icon} alt={title} className="ready__step_icon" />
 
-              <div className="ready__step_content">
-                <h3>{title}</h3>
-                <p>{description}</p>
+                <div className="ready__step_content">
+                  <h3>{title}</h3>
+                  <p>{description}</p>
 
-                {url_icon && (
-                  <span className="ready__step_link">
-                    <img src={url_icon} alt="" />
-                    {sub_title}
-                  </span>
-                )}
-              </div>
-            </article>
-          ))}
+                  {url_icon && (
+                    <span className="ready__step_link">
+                      <img src={url_icon} alt="" />
+                      {sub_title}
+                    </span>
+                  )}
+                </div>
+              </article>
+            )
+          )}
         </div>
 
         {/* Secure Note */}
@@ -82,11 +84,12 @@ const Ready = () => {
           </li>
         </ul>
 
-        <div className="ready__cta_help">
-          Need Help? Contact Us <img src={EduGlobe1} alt="contact" />
-        </div>
+        <Link to="/contact">
+          <div className="ready__cta_help">
+            Need Help? Contact Us <img src={EduGlobe1} alt="contact" />
+          </div>
+        </Link>
       </div>
-
     </section>
   );
 };

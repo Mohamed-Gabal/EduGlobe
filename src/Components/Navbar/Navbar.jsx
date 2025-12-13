@@ -26,7 +26,7 @@ const Navbar = () => {
       {/* Right Section: Buttons */}
       <div className="nav_actions">
         <button className="btn_signin">Sign In</button>
-        <button className="btn_apply">Apply Now</button>
+        <Link to="/contact"><button className="btn_apply">Apply Now</button></Link>
       </div>
     </nav>
   );
