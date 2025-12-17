@@ -1,104 +1,123 @@
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  padding: 10px 80px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 100;
 }
-.nav_left {
+/* Logo */
+.nav_logo {
   display: flex;
   align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
 }
 .nav_logo_img {
   width: 30px;
-  margin-right: 10px;
 }
+.nav_logo_text {
+  font-weight: 700;
+  line-height: 1.2;
+}
+.nav_logo_text p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+}
+/* Links */
 .nav_links {
   display: flex;
-  gap: 25px;
+  gap: 30px;
   list-style: none;
 }
 .nav_links a {
-  display: flex;
-  gap: 15px;
   color: #333;
   font-weight: 500;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 .nav_links a:hover {
-  color: #8B1A32;
+  color: #8b1a32;
 }
+/* Actions */
 .nav_actions {
   display: flex;
   gap: 15px;
 }
-.nav_actions .btn_apply,
-.nav_actions .btn_signin {
+.btn_signin {
+  background: transparent;
   border: none;
+  color: #8b1a32;
+  font-weight: 700;
   cursor: pointer;
-  border-radius: 10px;
 }
 .btn_apply {
-  background-color: #8B1A32;
+  background-color: #8b1a32;
   color: #fff;
-  padding: 10px 20px;
-  transition: 0.3s;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 .btn_apply:hover {
   background-color: #be2c4c;
 }
-.nav_actions .btn_signin {
-  color: #8B1A32;
-  background-color: transparent;
-  font-weight: bold;
-  transition: 0.3s;
+/* Menu Button */
+.nav_menu_btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #8b1a32;
 }
-.nav_actions .btn_signin:hover {
-  padding: 5px 15px;
-  background-color: #8B1A32;
-  color: #fff;
-}
-
-/* Responsive for smaller screens */
-@media (max-width: 1024px) {
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
   .nav {
-    padding: 15px 40px;
+    padding: 20px;
+  }
+  .nav_menu_btn {
+    display: block;
   }
   .nav_links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .nav_links--active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav_actions {
+    display: none;
+  }
+  .nav_links_actions {
+    display: flex;
     gap: 15px;
-  }
-  .nav_actions {
-    gap: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-  }
-  .nav_left {
-    width: 100%;
-  }
-  .nav_links {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  .nav_actions {
-    width: 100%;
-    justify-content: space-between;
     margin-top: 10px;
   }
 }
+/* Small Mobile */
 @media (max-width: 480px) {
-  .nav_logo_img {
-    width: 30px;
+  .btn_apply {
+    width: 100%;
   }
-  .btn_apply, .nav_actions .btn_signin {
-    padding: 8px 15px;
-    font-size: 14px;
+  .nav_links_actions {
+    flex-direction: column;
   }
 }
